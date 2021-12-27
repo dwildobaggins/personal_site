@@ -23,13 +23,6 @@
     font-feature-settings: 'liga';
 }
 
-
-
-
-@media (max-aspect-ratio: 9/16) {
-
-    @media (min-aspect-ratio: 9/19){
-
 body {
     height: 100vh;
     overflow: hidden;
@@ -49,7 +42,7 @@ body {
 
 
 .search-bar-container {
-    grid-column: 1/6;
+    grid-area: 6/1/7/6;
     padding: 30px 10px;
 }
 
@@ -300,8 +293,128 @@ nav li > * {
     width: 6rem;
 }
 
+#contact-open {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-open img {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+#contact-open a  {
+    color: white;
+    text-decoration: none;
+}
+
+.flex {
+    border-bottom: thin solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desktop-search {
+    display: none;
+}
+
 footer {
     display: none;
 }
 
-}}
+/* tablet size */
+@media (min-aspect-ratio: 9/16) {
+    body {
+        background-position: center;
+    }
+
+    #main {
+        height: 90%;
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        padding: 10px;
+    }
+
+
+    .search-bar-container {
+        grid-area: 6 / 3 / 7 / 8;
+    }
+
+
+    #contact-open img {
+        max-width: 35rem;
+        margin: 0 auto;
+        object-fit: cover;
+        object-position: center -5rem;
+    align-self: center;
+    }
+}
+
+/* desktop size */
+@media (min-aspect-ratio: 10/9) {
+
+    body {
+        background-image: url(../assets/desktop-background.jpg);
+    }
+
+    #main {
+        height: 90%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        padding: 10px;
+    }
+
+    #date-widget-container {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+
+    #at-a-glance-widget-container {
+        display: none;
+    }
+
+    .search-bar-container {
+        position: fixed;
+        padding: 0;
+        width: 3rem;
+        height: 2.5rem;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+    }
+
+    .desktop-search {
+        display: block;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    #search-phone-icon {
+        background-color: white;
+        border-radius: 0;
+        height: 100%;
+        width: 100%;
+        margin: auto;
+    }
+    
+    #contact-open img {
+        height: 30rem;
+        max-width: 40rem;
+        object-fit: cover;
+        object-position: center -5rem;
+    align-self: center;
+    }
+    
+    #contact-open a  {
+        color: white;
+        text-decoration: none;
+    }
+
+    
+}

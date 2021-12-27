@@ -20,50 +20,38 @@
             <div id="at-a-glance-widget-container">
                 <h1 id="welcome">Welcome to My Website</h1>
             </div>
-            <div class="app-icon-container">
-            </div>
-            <div class="app-icon-container"></div>
-            <div class="app-icon-container"></div>
-            <div class="app-icon-container"></div>
-            <div class="app-icon-container"></div>
-            <div class="app-icon-container"></div>
-            <div class="app-icon-container"></div>
-            <div class="app-icon-container"></div>
-            <div class="app-icon-container"></div>
-            <div class="app-icon-container"></div>
-            <div class="app-icon-container"></div>
-            <div class="app-icon-container"></div>
-            <div class="app-icon-container"></div>
-            <div class="app-icon-container"></div>
-            <div class="app-icon-container"></div>
-            <div class="app-icon-container">
+            <div class="app-icon-container about-me">
                 <div class="favorite get-app" id="about-me-icon">
                     <img src="assets/About.png" alt="">
                 </div>
             </div>
-            <div class="app-icon-container">
+            <div class="app-icon-container contact">
                 <div class="favorite get-app" id="contact-icon">
                     <img src="assets/Contact.png" alt="">
                 </div>
             </div>
-            <div class="app-icon-container">
+            <div class="app-icon-container settings">
                 <div class="favorite get-app" id="settings-icon">
-                    <img src="assets/Settings.png" alt="">
+                    <!-- <img src="assets/Settings.png" alt=""> -->
                 </div>
             </div>
-            <div class="app-icon-container">
+            <div class="app-icon-container blog">
                 <div class="favorite get-app" id="blog-icon">
-                    <img src="assets/Blog.png" alt="">
+                    <!-- <img src="assets/Blog.png" alt=""> -->
                 </div>
             </div>
             <div class="app-icon-container">
             </div>
             <div class="search-bar-container" id="search-bar-container">
-                <div class="get-app" id="search-phone-icon"></div>
+                <div class="get-app" id="search-phone-icon">
+                    <span class="material-icons-outlined desktop-search">
+                        search
+                    </span>
+                </div>
             </div>
         </div>
         <nav id="site-nav">
-            <ul>
+            <ul id="mobile-nav">
                 <li>
                     <span class="material-icons-outlined" id='back'>
                         arrow_back_ios_new
@@ -73,6 +61,7 @@
                     <div id='home'></div>
                 </li>
             </ul>
+            <ul id="desktop-nav"></ul>
         </nav>
         <div id="app-container"></div>
         <div class="app" id="search-phone">
@@ -86,16 +75,33 @@
             <p>This is my website. It's dedicated to the line where hobby and career intersect and serves
                 as a navigation hub from which to explore.
             </p>
+            <p>
+                Expect new projects to be added to the home screen as I build out my project portfolio.
+            </p>
         </div>
         <div class="app" id="contact">
             <h1>Contact</h1>
+            <img src="assets/contact-photo.jpg" alt="">
+            <h2>David Wilson</h2>
+            <div class="flex" id="email-address">
+                <span class="material-icons-outlined" id='email'>
+                    email
+                </span>
+                <p><a href="mailto: daugwilson@gmail.com">daugwilson@gmail.com</a></p>
+            </div>
+            <div class="flex" id="github">
+                <span class="material-icons-outlined" id='email'>
+                    link
+                </span>
+                <p><a href="https://github.com/dwildobaggins">github.com/dwildobaggins</a></p>
+            </div>
         </div>
-        <div class="app" id="settings">
+        <!-- <div class="app" id="settings">
             <h1>Settings</h1>
         </div>
         <div class="app" id="blog">
             <h1>Blog</h1>
-        </div>
+        </div> -->
         <footer>
             <script src="js/script.js"></script>
             <script src="js/swiped-events.min.js"></script>
